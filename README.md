@@ -1,9 +1,10 @@
-# Facebook SDK for PHP (v5)
+# Facebook SDK for PHP (v6)
 
-[![Build Status](https://img.shields.io/travis/facebook/php-graph-sdk/5.x.svg)](https://travis-ci.org/facebook/php-graph-sdk)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/facebook/php-graph-sdk/badges/quality-score.png?b=5.x)](https://scrutinizer-ci.com/g/facebook/php-graph-sdk/?branch=5.x)
-[![Latest Stable Version](http://img.shields.io/badge/Latest%20Stable-5.7.0-blue.svg)](https://packagist.org/packages/facebook/graph-sdk)
-
+[![Latest Version](https://img.shields.io/github/release/rusakovvv/php-graph-sdk.svg?style=flat-square)](https://github.com/rusakovvv/php-graph-sdk/releases)
+[![Build Status](https://img.shields.io/travis/rusakovvv/php-graph-sdk/master.svg?style=flat-square)](https://travis-ci.org/rusakovvv/php-graph-sdk)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/rusakovvv/php-graph-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/rusakovvv/php-graph-sdk)
+[![Quality Score](https://img.shields.io/scrutinizer/g/rusakovvv/php-graph-sdk.svg?style=flat-square)](https://scrutinizer-ci.com/g/rusakovvv/php-graph-sdk)
+[![Total Downloads](https://img.shields.io/packagist/dt/rusakovvv/php-graph-sdk.svg?style=flat-square)](https://packagist.org/packages/rusakovvv/php-graph-sdk)
 This repository contains the open source PHP SDK that allows you to access the Facebook Platform from your PHP app.
 
 ## Installation
@@ -11,18 +12,14 @@ This repository contains the open source PHP SDK that allows you to access the F
 The Facebook PHP SDK can be installed with [Composer](https://getcomposer.org/). Run this command:
 
 ```sh
-composer require facebook/graph-sdk
+composer require rusakovvv/php-graph-sdk
 ```
 
 Please be aware, that there are issues when using the Facebook SDK together with [Guzzle](https://github.com/guzzle/guzzle) 6.x. php-graph-sdk v5.x only works with Guzzle 5.x out of the box. However, [there is a workaround to make it work with Guzzle 6.x](https://www.sammyk.me/how-to-inject-your-own-http-client-in-the-facebook-php-sdk-v5#writing-a-guzzle-6-http-client-implementation-from-scratch).
 
-## Upgrading to v5.x
-
-Upgrading from v4.x? Facebook PHP SDK v5.x introduced breaking changes. Please [read the upgrade guide](https://www.sammyk.me/upgrading-the-facebook-php-sdk-from-v4-to-v5) before upgrading.
-
 ## Usage
 
-> **Note:** This version of the Facebook SDK for PHP requires PHP 5.4 or greater.
+> **Note:** This version of the Facebook SDK for PHP requires PHP 8 or greater.
 
 Simple GET example of a user's profile.
 
@@ -60,7 +57,6 @@ $me = $response->getGraphUser();
 echo 'Logged in as ' . $me->getName();
 ```
 
-Complete documentation, installation instructions, and examples are available [here](docs/).
 
 ## Tests
 
