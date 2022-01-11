@@ -1,9 +1,9 @@
 {
-    "name": "rusakovvv/php-graph-sdk",
+    "name": "facebook/graph-sdk",
     "description": "Facebook SDK for PHP",
     "keywords": ["facebook", "sdk"],
     "type": "library",
-    "homepage": "https://github.com/rusakovvv/php-graph-sdk",
+    "homepage": "https://github.com/facebook/php-graph-sdk",
     "license": "Facebook Platform",
     "authors": [
         {
