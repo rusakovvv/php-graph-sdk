@@ -81,7 +81,7 @@ class FacebookUrlManipulator
         }
 
         if (strpos($url, '?') === false) {
-            return $url . '?' . http_build_query($newParams, null, '&');
+            return $url . '?' . http_build_query($newParams, '', '&');
         }
 
         list($path, $query) = explode('?', $url, 2);
@@ -94,7 +94,7 @@ class FacebookUrlManipulator
         // Sort for a predicable order
         ksort($newParams);
 
-        return $path . '?' . http_build_query($newParams, null, '&');
+        return $path . '?' . http_build_query($newParams, '', '&');
     }
 
     /**
